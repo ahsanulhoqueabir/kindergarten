@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#FFFFE9]">
+    <!-- nav bar  -->
+    <nav class="flex justify-center font-bold gap-5 text-lg py-6">
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a class="text-blue-500" href="./contact.html">Contact</a>
+    </nav>
+    <!-- nav bar end -->
+    <main class="space-y-4 py-10 px-3 lg:px-10">
+      <h2 class="text-5xl font-black text-center">Contact Us</h2>
+      <p class="lg:w-1/4 mx-auto">
+        Get in touch! Have a question or feedback? Use our contact form or drop
+        us an email. We're here to help!
+      </p>
+      <div
+        class="bg-[#201F1F] rounded text-white py-16 px-3 lg:px-10 flex flex-col gap-5 lg:flex-row lg:w-3/4 mx-auto"
+      >
+        <!-- contact form  -->
+        <div class="w-full">
+          <h2 class="text-xl py-3">Get in touch with us</h2>
+          <form class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+              <label for="name">Name</label>
+              <input
+                class="border-[0.1px] border-[#8D8D8D] focus:outline-none py-2 bg-[#343333] rounded-md"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="   Ahsanul Hoque"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="email">Email</label>
+              <input
+                class="border-[0.1px] border-[#8D8D8D] focus:outline-none py-2 bg-[#343333] rounded-md"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="  contact.ahsaul@gmail.com"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="message">Message</label>
+              <textarea
+                class="border-[0.1px] h-48 border-[#8D8D8D] focus:outline-none py-2 bg-[#343333] rounded-md"
+                name="message"
+                id="message"
+                placeholder="Type your query here....."
+              ></textarea>
+            </div>
+            <button
+              class="bg-[#F3F25B] text-black w-fit border-none py-2 px-5 rounded hover:bg-teal-300"
+            >
+              Send my message
+            </button>
+          </form>
+        </div>
+        <!-- map area  -->
+        <div class="w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12625.270674151669!2d-122.4966037273407!3d37.71222072464693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7c4ef6684a11%3A0xa102d9bf0cad6bcb!2sSan%20Francisco%20Golf%20Club!5e0!3m2!1sbn!2sbd!4v1704989555940!5m2!1sbn!2sbd"
+           
+            style="border: 0;width: 100%; height: 100%;"
+            allowfullscreen="yes"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
